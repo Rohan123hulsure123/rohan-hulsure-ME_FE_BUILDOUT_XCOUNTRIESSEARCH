@@ -35,7 +35,7 @@ export default function App() {
         .filter((country) => {
           if (searchRes === "") {
             return country;
-          } else if (country.name.common.toLowerCase().includes(searchRes)) {
+          } else if (country.name.common.toLowerCase().includes(searchRes.toLowerCase())) {
             return country;
           }
         })
